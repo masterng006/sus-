@@ -1,0 +1,24 @@
+# =========================================================
+# SUS PLUGIN CONFIG
+# =========================================================
+
+gui:
+  title: "&8&lSuspicious Players"
+  size: 54
+  heads-per-page: 45
+
+messages:
+  no-permission: "&cYou don't have permission to do that."
+  not-online: "&c%player% is not online right now."
+  usage-flag: "&cUsage: /sus flag <player> <check>"
+  usage-clear: "&cUsage: /sus clear <player>"
+  console-only-flag: "&7[SUS] Console/anticheat flags are logged silently."
+  flag-broadcast: "&e[SUS] &f%player% &7flagged for &f%check% &7(Total: &f%total%&7) by &f%flagger%"
+  cleared: "&a[SUS] &fCleared all flags for &e%player%&f."
+  now-spectating: "&a[SUS] &7Now spectating &f%player%&7."
+  reloaded: "&a[SUS] &fConfig reloaded."
+  gui-player-only: "&cThis command must be run in-game."
+
+# When true, flag data is written to flags.yml on server stop and loaded on start.
+# When false, all flags reset when the server restarts (session-only, like some SUS plugins).
+persist-data: true

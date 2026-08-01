@@ -1,0 +1,24 @@
+name: SusPlugin
+version: '1.0.0'
+main: com.yourserver.sus.SusPlugin
+api-version: '26.2'
+author: YourServer
+
+commands:
+  sus:
+    description: Open the Sus flagged-players GUI, or manage flags.
+    usage: /sus [flag <player> <check>|clear <player>|reload]
+
+permissions:
+  sus.use:
+    description: Allows opening the /sus GUI.
+    default: op
+  sus.flag:
+    description: Allows manually flagging players (and lets console/anticheat call it).
+    default: op
+  sus.clear:
+    description: Allows clearing a player's flags.
+    default: op
+  sus.reload:
+    description: Allows reloading the Sus config.
+    default: op
